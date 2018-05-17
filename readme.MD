@@ -19,3 +19,8 @@ Using the provided design file, develop a single page housing a form that submit
 ###
 
 Let me know if you have any questions.
+
+## started 9pm EST
+
+took 3 hours to get the backend setup for the frontend project
+
