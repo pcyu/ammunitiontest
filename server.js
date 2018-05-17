@@ -4,6 +4,7 @@ const express = require('express');
 const {PORT} = require('./config');
 const app = express();
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 app.use( '/', express.static(__dirname + '/public') );
 app.use( '/node_modules', express.static(__dirname + '/node_modules') );
@@ -49,6 +50,10 @@ app.post('/direct', (req, res) => {
       console.log(info);
     }
   });
+});
+
+app.get('/direct', (req, res) => {
+  res.sendFile('index.html', { root: path.join(__dirname, '/public')});
 });
 
 app.listen(PORT, function() {
