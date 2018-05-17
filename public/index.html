@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="livereloadboilerplate">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
     <title>Ammunition Front-End Dev Test</title>
   </head>
   <body>
-    <h1>front-end dev test</h1>
-
-    <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-
+    <header>
+      <div class="header-message">front-end dev test</div>
+    </header>
     <form action="/direct" method="post">
-      Full Name:*<br>
-      <input type="text" name="name" required><br>
-      Email Address:*<br>
-      <input type="email" name="email" required><br>
-      Message:*<br>
-      <input type="text" name="message" size="50" required><br><br>
-      <input type="submit" value="Send">
-      <input type="reset" value="Reset">
-      </form>
+      <div class="form-container">
+        <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
+        <div>Full Name:*</div>
+        <input type="text" name="name" required>
+        <div>Email Address:*</div>
+        <input type="email" name="email" required>
+        <div>Message:*</div>
+        <input type="text" name="message" required>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
