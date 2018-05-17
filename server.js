@@ -50,7 +50,7 @@ app.post('/direct', (req, res) => {
       console.log(info);
     }
   });
-  res.redirect('back');
+  res.status(200).send('Check that email, homey!');
 });
 
 // app.get('/direct', (req, res) => {
