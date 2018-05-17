@@ -3,14 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pcyu/ammunitiontest.git"
-  },
-  "engines": {
-    "node": "8.10.0",
-    "npm": "3.5.2"
-  },
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
