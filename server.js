@@ -22,16 +22,33 @@ app.post('/direct', (req, res) => {
     }
   });
   const mailOptions = {
-    from: `"${req.body.name}" <rahxephon@gmail.com>`, // sender address
+    from: `"${req.body.name}" <${req.body.email}>`, // sender address
     to: 'peteryu@gmail.com', // list of receivers
     subject: 'Form Submission', // Subject line
-    text: req.body.comment
+    html:        
+    `<p><b>Full name:</b> ${req.body.name}</p> 
+    <p><b>Email Address:</b> ${req.body.email}</p> 
+    <p><b>Message:</b> ${req.body.message}</p> `
+  };
+  const receipt = {
+    from: `"Ammunition Agency" <ammunitiontestemail@gmail.com>`,
+    to: req.body.email,
+    subject: 'Form Submission Receipt', 
+    text: "You have successfully submitted your form to Ammunition Agency.  Please do not reply to this message."
   };
   transporter.sendMail(mailOptions, function (err, info) {
-    if(err)
+    if(err) {
       console.log(err)
-    else
+    } else {
+      transporter.sendMail(receipt, function (err, info) {
+        if(err) {
+          console.log(err)
+        } else {
+          console.log(info);
+        }
+      });
       console.log(info);
+    }
   });
   res.sendFile('direct.html', {root: path.join(__dirname, '/public')});
 });
