@@ -18,7 +18,7 @@ app.post('/direct', (req, res) => {
     service: 'gmail',
     auth: {
       user: 'ammunitiontestemail@gmail.com',
-      pass: 'cloudatlas1'
+      pass: process.env.PASSWORD
     }
   });
   
