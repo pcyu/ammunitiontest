@@ -15,7 +15,7 @@ var transporter = nodemailer.createTransport({
 const mailOptions = {
   from: '"Ammunition" <ammunitiontestemail@email.com>', // sender address
   to: 'peteryu@gmail.com', // list of receivers
-  subject: 'herokudeploytest', // Subject line
+  subject: 'forreal', // Subject line
   text: 'Hello guys',
   html: '<p>Your html here</p>'// plain text body
 };
