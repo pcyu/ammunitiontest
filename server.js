@@ -50,7 +50,7 @@ app.post('/direct', (req, res) => {
       console.log(info);
     }
   });
-  res.status(200).send('Your form has been submitted');
+  res.status(200).send('Your form has been submitted!');
 });
 
 // app.get('/direct', (req, res) => {
