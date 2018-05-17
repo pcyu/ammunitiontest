@@ -1,15 +1,15 @@
-h1 {
-  color: black;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
-  text-transform: uppercase; 
-}
-
 body {
   margin: 0;
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
+}
+
+.dark-blue {
+  border: 3rem solid #0B2838;
+}
+
+.gray-blue {
+  border: 1rem solid #3F4E58;
 }
 
 .field-notice {
@@ -21,7 +21,13 @@ body {
 footer {
   height: 50px;
   width: 100%;
-  background-color: gray;
+  background: repeating-linear-gradient(
+    -610deg,
+    white,
+    white 6px,
+    #EEF4F5 6px,
+    #EEF4F5 10px
+  );
 }
 
 .form-container {
@@ -34,7 +40,7 @@ footer {
 }
 
 header {
-  background-color: #E8E9E0;
+  background-color: #EEF4F5;
 }
 
 .header-message {
