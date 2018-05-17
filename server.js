@@ -50,11 +50,12 @@ app.post('/direct', (req, res) => {
       console.log(info);
     }
   });
+  res.redirect('back');
 });
 
-app.get('/direct', (req, res) => {
-  res.sendFile('index.html', { root: path.join(__dirname, '/public')});
-});
+// app.get('/direct', (req, res) => {
+//   res.sendFile('index.html', { root: path.join(__dirname, '/public')});
+// });
 
 app.listen(PORT, function() {
   console.log(`The server at port ${PORT} is listening.`);
