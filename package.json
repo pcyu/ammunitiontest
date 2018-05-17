@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "dotenv": "^5.0.1",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "nodemailer": "^4.6.4",
+    "normalize.css": "^8.0.0"
   }
 }
