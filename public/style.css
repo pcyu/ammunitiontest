@@ -26,6 +26,7 @@ header {
   text-transform: uppercase;
   font-weight: 500;
   font-family: sans-serif;
+  font-size: 2rem;
 }
 
 p {
@@ -39,9 +40,11 @@ form {
 input {
   border: 1px solid #EEF4F5;
   font-family: 'Roboto Slab', serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 100;
-  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding: .5rem;
   width: 100%;
 }
 
@@ -50,6 +53,8 @@ textarea {
   font-family: 'Roboto Slab', serif;
   font-size: 1.2rem;
   font-weight: 100;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   padding: 1rem; 
   width: 100%;
 }
@@ -58,16 +63,32 @@ textarea {
   text-align: center;
 }
 
+label {
+  font-size: 1.2rem;
+}
+
 input[type=submit] {
   color: white;
   background-color: #71ad9d;
   display: block;
-  font-size: 1rem;
+  font-size: 1.6rem;
   height: 4rem;
   margin: 0 auto;
   margin-bottom: 10%;
   text-transform: uppercase;
   width: 50%;
+}
+
+footer {
+  height: 3rem;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -610deg,
+    white,
+    white .6rem,
+    #EEF4F5 .6rem,
+    #EEF4F5 .9rem
+  );
 }
 
 /* 
