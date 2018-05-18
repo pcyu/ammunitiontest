@@ -23,7 +23,7 @@ app.post('/direct', (req, res) => {
   });
   const mailOptions = {
     from: `"${req.body.name}" <${req.body.email}>`, // sender address
-    to: 'peteryu@gmail.com', // list of receivers
+    to: 'jeremy@ammunition.agency', // list of receivers
     subject: 'Form Submission', // Subject line
     html:        
     `<p><b>Full name:</b> ${req.body.name}</p> 
