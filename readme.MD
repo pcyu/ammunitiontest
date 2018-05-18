@@ -20,10 +20,10 @@ Using the provided design file, develop a single page housing a form that submit
 
 Let me know if you have any questions.
 
-## started 9pm EST
+## started 9am EST
 
 took 3 hours to get the backend setup for the frontend project
 
-styling: 2:00pm
+styling: 2:00pm-6:00p,
 
 remember to change the send address to jeremy@ammunition.agency
