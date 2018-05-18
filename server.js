@@ -34,7 +34,11 @@ app.post('/direct', (req, res) => {
     from: `"Ammunition Agency" <ammunitiontestemail@gmail.com>`,
     to: req.body.email,
     subject: 'Form Submission Receipt', 
-    text: "You have successfully submitted your form to Ammunition Agency.  Please do not reply to this message."
+    html:        
+    `<p>Form contents below have been submitted.</p>
+    <p><b>Full name:</b> ${req.body.name}</p> 
+    <p><b>Email Address:</b> ${req.body.email}</p> 
+    <p><b>Message:</b> ${req.body.message}</p> `
   };
   transporter.sendMail(mailOptions, function (err, info) {
     if(err) {
@@ -52,10 +56,6 @@ app.post('/direct', (req, res) => {
   });
   res.status(200).send('Your form has been submitted!');
 });
-
-// app.get('/direct', (req, res) => {
-//   res.sendFile('index.html', { root: path.join(__dirname, '/public')});
-// });
 
 app.listen(PORT, function() {
   console.log(`The server at port ${PORT} is listening.`);
