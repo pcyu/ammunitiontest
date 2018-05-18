@@ -54,6 +54,22 @@ textarea {
   width: 100%;
 }
 
+.note {
+  text-align: center;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: #71ad9d;
+  display: block;
+  font-size: 1rem;
+  height: 4rem;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  text-transform: uppercase;
+  width: 50%;
+}
+
 /* 
 .dark-blue {
   border: 1rem solid #0B2838;
