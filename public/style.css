@@ -65,7 +65,7 @@ header {
   color: black;
   font-family: sans-serif;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 input {
@@ -94,6 +94,15 @@ section {
 }
 
 @media (min-width: 440px) {
+  .form-container {
+    margin: 5% 15%;
+  }
+  .header-message {
+    margin: 0 15%;
+  }
+}
+
+@media (min-width: 768px) {
   .form-container {
     margin: 5% 15%;
   }
