@@ -24,6 +24,8 @@ Let me know if you have any questions.
 
 took 3 hours to get the backend setup for the frontend project
 
-styling: 2:00pm-6:00p,
+styling: 2:00pm-8:20p,
 
 remember to change the send address to jeremy@ammunition.agency
+
+Back-end test: 9:10am - 

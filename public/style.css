@@ -1,9 +1,53 @@
 body {
-  margin: 0;
+  background-color: #0B2838;
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
+.container {
+  border: 2rem solid #3F4E58;
+  background-color: white;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #EEF4F5;
+  padding: 5% 10%;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+p {
+  padding: 2% 10%;
+}
+
+form {
+  padding: 0 10%;
+}
+
+input {
+  border: 1px solid #EEF4F5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid #EEF4F5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  width: 100%;
+}
+
+/* 
 .dark-blue {
   border: 1rem solid #0B2838;
   border-left: 1.6rem solid #0B2838;
@@ -32,6 +76,10 @@ footer {
   );
 }
 
+form {
+  padding: 10% 5%;
+}
+
 .form-container {
   margin: 10%;
 }
@@ -54,20 +102,6 @@ textarea {
   font-weight: 100;
   margin-top: 5%;
   width: 100%;
-}
-
-header {
-  background-color: #EEF4F5;
-}
-
-.header-message {
-  text-transform: uppercase;
-  margin: 0 10%;
-  padding: 5% 0;
-  color: black;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-size: 1rem;
 }
 
 input {
@@ -111,4 +145,4 @@ section {
   .header-message {
     margin: 0 15%;
   }
-}
+} */

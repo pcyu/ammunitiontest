@@ -9,28 +9,20 @@
     <title>Ammunition Front-End Dev Test</title>
   </head>
   <body>
-    <div class ="dark-blue">
-      <div class="gray-blue">
-        <header>
-          <div class="header-message">front-end dev test</div>
-        </header>
-        <form action="/direct" method="post">
-          <div class="form-container">
-            <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</section>
-            <div class="form-labels">Full Name:*</div>
-            <input class="form-inputs" type="text" name="name" required>
-            <div class="form-labels">Email Address:*</div>
-            <input class="form-inputs" type="email" name="email" required>
-            <div class="form-labels">Message:*</div>
-            <textarea type="text" name="message" required></textarea>
-          </div>
-          <div class="field-notice">* All Fields Are Required</div>
-          <input type="submit" value="Submit">
-        </form>
-        <footer>
-          <div class="diagonal-gray"></div>
-        </footer>
-      </div>
+    <div class ="container">
+      <header>front-end dev test</header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <form action="/direct" method="post">
+        <label>Full Name:*</label>
+          <input class="form-inputs" type="text" name="name" required>
+        <label>Email Address:*</label>
+          <input class="form-inputs" type="email" name="email" required>
+        <label>Message:*</label>
+          <textarea type="text" name="message" required></textarea>
+        <p>* All Fields Are Required</p>
+        <input type="submit" value="Submit">
+      </form>
+      <footer></footer>
     </div>
   </body>
 </html>
